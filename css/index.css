@@ -1,0 +1,133 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "Noto Sans TC", sans-serif;
+    background-image: url(../images/照片牆_植物.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: 1024px;
+
+}
+
+#wrapper {
+    margin: 0px auto;
+    width: 1024px;
+}
+
+#logo {
+
+    width: 100%;
+}
+
+#logo img {
+    width: 100%;
+}
+
+.col-lg-5 {
+    background-color: rgba(224, 217, 211, 0.3);
+}
+
+.text {
+    height: 100vh;
+    position: relative;
+}
+
+/*vh指view height，裝置可視畫面的高度百分比*/
+
+
+
+/*圖片橫寬要確認*/
+nav {
+    background-color: #E0d9d3;
+    text-align: center
+}
+
+ul {
+    display: inline-block;
+    margin: 0px;
+}
+
+li {
+    list-style-type: none;
+    float: left;
+    text-align: center;
+}
+
+li a {
+    display: block;
+    padding: 15px 20px;
+    color: #94785a;
+    text-decoration: none
+}
+
+li a:hover {
+    background-color: #94785a;
+    color: #f2f2f2;
+}
+
+
+footer {
+    background-color: #E0d9d3;
+    text-align: center;
+}
+
+footer p {
+    font-size: 10px;
+    color: #94785a;
+    padding: 10px 0px;
+}
+
+/*響應式網頁*/
+@media screen and (max-width:1024px) {
+    #wrapper {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:640px) {
+    li a {
+        padding: 10px;
+    }
+}
+
+
+background-overlay {
+    position: relative;
+    display: inline-block;
+}
+
+.background-overlay img {
+    display: block;
+    width: 100%;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #94785a;
+}
+
+.overlay-text h1 {
+    margin-bottom: 10px;
+}
+
+.overlay-text p {
+    margin-bottom: 20px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* 半透明底色 */
+}

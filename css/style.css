@@ -1,0 +1,194 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    ;
+
+}
+
+#wrapper {
+    margin: 0px auto;
+    width: 1024px;
+}
+
+#logo {
+
+    width: 100%;
+}
+
+/*圖片橫寬要確認*/
+nav {
+    background-color: #E0d9d3;
+    text-align: center
+}
+
+ul {
+    display: inline-block;
+    margin: 0px;
+}
+
+li {
+    list-style-type: none;
+    float: left;
+    text-align: center;
+}
+
+li a {
+    display: block;
+    padding: 15px 20px;
+    color: #94785a;
+    text-decoration: none
+}
+
+li a:hover {
+    background-color: #94785a;
+    color: #f2f2f2;
+}
+
+.title {
+    color: #94785a;
+    font-weight: bold;
+}
+
+#content_in {
+    padding: 30px 50px;
+    text-align: center;
+    background-color: #f6f5f3;
+}
+
+#content h1 {
+    color: #94785a;
+    margin-bottom: 10px;
+}
+
+#content_in p {
+    font-size: 14px;
+    margin-bottom: 20px
+}
+
+#content_in a {
+    display: block;
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+    text-decoration: none;
+    background-color: #94785a;
+    color: #ffffff
+}
+
+.image {
+    flex: 0 0 auto;
+    width: 300px;
+    /*圖片寬度*/
+    margin-right: 30px;
+    float: left
+}
+
+.image_right {
+    flex: 0 0 auto;
+    width: 300px;
+    /*圖片寬度*/
+    margin-right: 30px;
+    float: right
+}
+
+/*圖片與文本間距離 */
+.text {
+    flex: 1;
+    float: right
+        /*文本佔剩餘空間*/
+}
+
+.text_left {
+    flex: 1;
+    float: left
+        /*文本佔剩餘空間*/
+}
+
+h1 small {
+    margin-left: 5px;
+    /* 設置 Work 的左外邊距為 5px，創建一個小間距 */
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: #f6f5f3;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 50 px;
+    /* 增加上外邊距 */
+}
+
+/* Clear floats after the columns在特定類別（.row）的元素之後插入一個偽元素，並將其設置為清除浮動，以確保後續元素的正確布局 */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+footer {
+    background-color: #E0d9d3;
+    text-align: center;
+}
+
+footer p {
+    font-size: 10px;
+    color: #94785a;
+    padding: 10px 0px;
+}
+
+/* 表格 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    border: #94785a;
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+th {
+    border-bottom: 1px solid #94785a;
+    /* 下標實體線 */
+
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/*響應式網頁*/
+@media screen and (max-width:1024px) {
+    #wrapper {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:640px) {
+    li a {
+        padding: 10px;
+    }
+}
+
+#logo img {
+    width: 100%;
+}
